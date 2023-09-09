@@ -22,10 +22,81 @@
 
 
 
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
 
+
+body{ color: #231f20;
+	line-height: 22px;
+	margin: 0;
+    min-height: 100%;
+	font-size: 18px;
+    font-family: arial,helvetica
+	
+}
+
+
+
+/* Zo komt de nav er uit te zien wanneer deze is uitgeklapt. 
+nav::after {
+	background: #917d70;
+	top: 0;
+    right: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1500;
+    color: #fff;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 122px;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+    height: 100%
+}
+*/
+
+p{ font-size: 16px;}
+
+
+/* informatie over opmaak van de button komn van de nijntje website */
+button{ 
+	cursor: pointer;
+	font: inherit;
+    margin: 0;
+    background: #f0efef;
+	color: #111;
+}
+
+button, button:active {
+font-size: 18px;
+border-radius: 6px;
+font-family:arial,helvetica;
+height: 40px;
+display: inline-block;
+line-height: 100%;
+text-transform: lowercase;
+outline: 0;
+border: 2px solid #f0efef;
+padding: 1px 10px 0;
+transition: all .35s cubic-bezier(.06,.4,.5,.95);
+}
+
+button:active{
+	background: transparent;
+    color: #f0efef;
+}
+
+button[disabled]{ 
+	cursor: default ;
+	opacity: .2;
+    cursor: not-allowed;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1)!important}
+
+img{ width: 35%;
+	border-radius: 6px;
+    max-width: 100%}
