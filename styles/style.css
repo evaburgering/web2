@@ -15,8 +15,19 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    --main-text-color: #231f20;
+    --main-background-color: #eee;
+    --button-background-color: #f0efef;
+    --button-text-color: #656565;
+    --button-border-radius: 0.375em;
+    --link-color: #005398;
+    --link-hover-color: #0078d4;
+    --section-background-color: #f0efef;
+    --section-text-color: #4c4747;
+    --section-border-radius: 0.375em;
+    --section-padding: 2.5em 0 7.5em;
+    --section-margin: 5em 0 6em;
+    --section-line-height: 1.7;
 }
 
 
@@ -26,10 +37,9 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
-
-body{ color: #231f20;
+body{ 
+    color: var(--main-text-color);
 	line-height: 1.375em;
 	margin: 0;
     min-height: 100%;
@@ -39,21 +49,27 @@ body{ color: #231f20;
 }
 
 
-p{ font-size: 1em;}
+p{ font-size: 1em;
+   margin-left: 1.5em;
+   margin-right: 1.5em;
+}
+
+main p{
+    display: block;  
+}
 
 
 /* informatie over opmaak van de button komn van de nijntje website */
 button{ 
-    right: 1.8em;
-    top: 1.8em;
+    right: 1.2em;
+    top: 1.2em;
     overflow: visible;
     position: fixed;
 	cursor: pointer;
     font-weight:bolder;
-    background: #f0efef;
-    color: #656565;
-    border-radius: 0.375em
-    
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border-radius: var(--button-border-radius);
 }
 
 button, button:active {
@@ -66,6 +82,11 @@ outline: 0;
 border: 0.125em solid #f0efef;
 padding: 0.100em 0.500em 0;
 transition: all .35s cubic-bezier(.06,.4,.5,.95);
+}
+
+button:focus{
+    outline: 2px solid #0078d4;
+    outline-offset: 0.2em;   /* Zorg voor wat afstand tussen de rand en de knop */
 }
 
 button:active{
@@ -85,7 +106,6 @@ button[disabled]{
     /* onderstaande code is voor de uitschuif menubalk 
 BRON: chatgpt en w33 schools, transitions snelheid enz, van de nijntje website   WERKT NOG NIETTTTTT*/
 header nav {
-    display: ;
     position: fixed;
     top: 0;
     right: -28.125em; /* Verplaats het menu buiten het zichtbare scherm */
@@ -119,6 +139,14 @@ header nav.active {
     right: 0;
 }
 
+/* logo nijntje */  
+img[alt="nijntjelogo"] {
+    width: 3.3em;
+    position: fixed;
+    border-radius: 100%;
+    left: 1em;
+    top: 1em;
+}
 
 img{ 
     max-width: 90%}
@@ -130,7 +158,7 @@ img{
         margin-bottom: 2em;
     }
 
-    header img{
+    img[alt="nijntje homepagina"] {
         width: 30%;
         display: block;
         margin-left: auto;
@@ -159,6 +187,72 @@ img{
         visibility: hidden;
     }
 
+    /* deze code is voor de blauwe section óver nijntje */
+    main > section:nth-child(1) {
+        background: #005398;
+        color: #fff;
+        padding: var(--section-padding);
+        margin: var(--section-margin);
+        line-height: var(--section-line-height);
+    }
+
+
+    /* deze code is voor de het licht blauwe blok in óver nijntje */
+    main > section > p:nth-of-type(2) {
+        background: rgba(255,255,255,.1);
+        display: block;
+        font-weight: 700;
+        border-radius: 0.375em;
+        padding: 1.25em 1.875em;
+        margin: 1em 4em 1em 1.7em;}
+
+          /* deze code is voor de nijntje afbeedling */
+        img[alt="Hoofdafbeelding nijntje"] {
+            max-height: 170px;
+            position: absolute;
+            left: 30%;
+            margin-top: -11.5em;
+        }
+
+
+    /* deze code is voor de losse grijze inhoudsopgave */
+    main > section:nth-child(2) {
+        background-color: var(--section-background-color);
+        text-transform: lowercase;
+        margin: 2em 1em ;
+        padding-top: 0.5em;
+        padding-bottom: 0.7em;
+        border-radius: 0.375em;
+    }
+
+    ol{
+        color: #f26522;
+        font-weight: 700;
+        padding-left: 3em ;
+        display: list-item;
+        line-height: 0.5em;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+             /* */
+
+    h2{
+        color: #4c4747;
+        padding-left: 1.5em;
+     }
+
+     h3{
+        margin-left: 1.25em;
+        font-size: 1.125em;
+     }
+        
+    
     footer{
         text-transform: lowercase;
+        color: rgba(35,31,32,.4);
+        position: absolute;
+        font-weight: bolder;
+        right: 19px;
+        font-size: 70%;
     }
