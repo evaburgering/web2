@@ -30,57 +30,41 @@
 
 
 body{ color: #231f20;
-	line-height: 22px;
+	line-height: 1.375em;
 	margin: 0;
     min-height: 100%;
-	font-size: 18px;
+	font-size: 1.125em;
     font-family: arial,helvetica
 	
 }
 
 
-
-/* Zo komt de nav er uit te zien wanneer deze is uitgeklapt. 
-nav::after {
-	background: #917d70;
-	top: 0;
-    right: 0;
-    position: fixed;
-    width: 100vw;
-    z-index: 1500;
-    color: #fff;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 122px;
-    overflow-y: scroll;
-    padding-bottom: 40px;
-    height: 100%
-}
-*/
-
-p{ font-size: 16px;}
+p{ font-size: 1em;}
 
 
 /* informatie over opmaak van de button komn van de nijntje website */
 button{ 
+    right: 1.8em;
+    top: 1.8em;
+    overflow: visible;
+    position: fixed;
 	cursor: pointer;
-	font: inherit;
-    margin: 0;
+    font-weight:bolder;
     background: #f0efef;
-	color: #111;
+    color: #656565;
+    border-radius: 0.375em
+    
 }
 
 button, button:active {
-font-size: 18px;
-border-radius: 6px;
-font-family:arial,helvetica;
-height: 40px;
+font-size: 1.125em;
+height: 2em;
 display: inline-block;
 line-height: 100%;
 text-transform: lowercase;
 outline: 0;
-border: 2px solid #f0efef;
-padding: 1px 10px 0;
+border: 0.125em solid #f0efef;
+padding: 0.100em 0.500em 0;
 transition: all .35s cubic-bezier(.06,.4,.5,.95);
 }
 
@@ -91,12 +75,90 @@ button:active{
 
 button[disabled]{ 
 	cursor: default ;
-	opacity: .2;
+	opacity: 2;
     cursor: not-allowed;
     color: #fff;
     border: 2px solid #fff;
     transform: scale(1)!important}
 
-img{ width: 35%;
-	border-radius: 6px;
-    max-width: 100%}
+
+    /* onderstaande code is voor de uitschuif menubalk 
+BRON: chatgpt en w33 schools, transitions snelheid enz, van de nijntje website   WERKT NOG NIETTTTTT*/
+header nav {
+    display: ;
+    position: fixed;
+    top: 0;
+    right: -28.125em; /* Verplaats het menu buiten het zichtbare scherm */
+    width: 100%;
+    height: 100%;
+    background: #917d70;
+    color: #fff;
+    transition: all .25s ease;
+    z-index: 1500;
+    padding-bottom: 2.5em;
+    text-transform: lowercase;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    padding: 0.625em;
+    text-align:start;
+    padding-left: 2em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav.active {
+    right: 0;
+}
+
+
+img{ 
+    max-width: 90%}
+
+    h1{
+        margin: 0.67em 0;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+
+    header img{
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em ;
+    }
+
+    /* De onderstaande code is voor de fotocollage op de homepaige */
+   
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; 
+        margin: 0.625em 0.625em;
+    }
+
+    figure img {
+        width: calc(50% - 0.625em); /* Zorg ervoor dat er 10px ruimte tussen de afbeeldingen is */
+        height: 44%;
+        border-radius: 0.75em;
+        margin: 0.3125em;
+    }
+
+    figcaption{ /* alleen voor  de screenreader */
+        visibility: hidden;
+    }
+
+    footer{
+        text-transform: lowercase;
+    }

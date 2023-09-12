@@ -111,12 +111,14 @@ Tijdens het navigeren op de website merkte ik op dat er een automatische audio u
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Deze week probeerde ik een gallerij te maken op de homepaige van fotos. Het is me dankzij de figure teg en het gebruiken van flex wrap gelukt om do fotos aan elkaar te koppen en on der elkaar te zetten . Het lukt me alleen nog niet om deze met z'n e naast elkaar te zetten.... Ik zal een student assistent vragen om mij hier mee te helpen.
+<img src="readme-images/mijn_website_week2.0.jpg" width="375px" alt="2e pagina week 2">
+<img src="readme-images/mijn_website_week2.jpg" width="375px" alt="2e pagina week 2">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | ik            | evi                 | maxwell      | melvin           |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
