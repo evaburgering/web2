@@ -16,7 +16,7 @@
 
     
 	<!--navigatie knop en vertikale slider -->
-	<header>
+	<header class="tweedeheader">
 		<nav role="navigatie">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -28,8 +28,12 @@
 				<li><a href="/zakelijke-informatie">Zakelijke informatie</a></li>
 			</ul>
 		</nav>
+        
+        <p>Nijntje</p>
 		<button aria-label="Menu openen">Menu</button>
-        <img src="images/nijnlogo.jpg" alt="nijntjelogo">
+
+        <a href="index.html">
+        <img src="images/nijnlogo.jpg" alt="nijntjelogo" role="navigate to home"> <title>navigeer hier terug naar de home pagina</title></a>
 	</header>
 
 	
@@ -42,7 +46,7 @@
 
         <img src="images/main_nijntje.png" alt="Hoofdafbeelding nijntje">
 
-        <section>   <!-- Inhoud extra navigatie... -->
+        <section class="inhoudsopgave">   <!-- Inhoud extra navigatie... -->
             <h2>inhoudsopgave</h2>
             <ol> 
                 <li><p>Geschiedenis</p></li>
@@ -61,7 +65,11 @@
         <section>
             <h3>Populair</h3>
             <p>Nijntje is wereldwijd het meest bekend en het meest populair van de figuren uit de boeken van Dick Bruna. Hij heeft over haar ook de meeste boeken gemaakt (meer dan 30). Ze spreekt kinderen over de hele wereld aan en geeft ze een warm en prettig gevoel van veiligheid. Veel kinderen herkennen zich in nijntje en in haar avonturen. Ze is ongecompliceerd en onschuldig, is positief en staat open voor nieuwe ervaringen.</p>
-            <p>Volgens de Japanse en Chinese dierenriem is Dick Bruna geboren in het jaar van het konijn.</p>
+        </section>
+
+        <section class="blockquote">
+            <h3 class="sr-only">Een quote van we website</h3>
+            <p>"Volgens de Japanse en Chinese dierenriem is Dick Bruna geboren in het jaar van het konijn."</p>
         </section>
 
         <section>
@@ -70,7 +78,9 @@
         </section>
 	</main>
 
-    <footer> <p>&copy; Mercis bv</p> </footer> <!-- Bron: nijntje.nl   -->
+    <footer> 
+        <p>&copy; Mercis bv</p> 
+    </footer> <!-- Bron: nijntje.nl   -->
 
 	<script defer src="scripts/script.js"></script>
 </body>

@@ -37,7 +37,6 @@
 /* JOUW STYLING */
 /****************/
 
-
 body{ 
     color: var(--main-text-color);
 	line-height: 1.375em;
@@ -48,6 +47,18 @@ body{
 	
 }
 
+
+.sr-only { /* bron: https://css-tricks.com/inclusively-hidden/e */
+    
+    
+        clip: rect(0 0 0 0); 
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap; 
+        width: 1px;
+}
 
 p{ font-size: 1em;
    margin-left: 1.5em;
@@ -70,6 +81,7 @@ button{
     background-color: var(--button-background-color);
     color: var(--button-text-color);
     border-radius: var(--button-border-radius);
+    z-index: 1600
 }
 
 button, button:active {
@@ -84,15 +96,16 @@ padding: 0.100em 0.500em 0;
 transition: all .35s cubic-bezier(.06,.4,.5,.95);
 }
 
+button:active{
+	background: transparent;
+    color: #f0efef;
+}
+
 button:focus{
     outline: 2px solid #0078d4;
     outline-offset: 0.2em;   /* Zorg voor wat afstand tussen de rand en de knop */
 }
 
-button:active{
-	background: transparent;
-    color: #f0efef;
-}
 
 button[disabled]{ 
 	cursor: default ;
@@ -108,7 +121,7 @@ BRON: chatgpt en w33 schools, transitions snelheid enz, van de nijntje website  
 header nav {
     position: fixed;
     top: 0;
-    right: -28.125em; /* Verplaats het menu buiten het zichtbare scherm */
+    right: -100%; /* Verplaats het menu buiten het zichtbare scherm */
     width: 100%;
     height: 100%;
     background: #917d70;
@@ -139,6 +152,26 @@ header nav.active {
     right: 0;
 }
 
+.tweedeheader{           /* de header van mijn tweede pagina*/  
+    display: block;
+    width: 100%;
+    background: rgba(255,255,255,.99);
+    z-index: 999;
+    opacity: .96;
+    padding: 0.625em 0.938em;
+    position: fixed;
+    top: 0;
+}
+
+.tweedeheader p{ 
+    padding-left: 3em;
+    text-transform: lowercase;
+    font-weight: bolder;
+    padding-top: 0.250em;
+}
+
+
+
 /* logo nijntje */  
 img[alt="nijntjelogo"] {
     width: 3.3em;
@@ -161,31 +194,29 @@ img{
     img[alt="nijntje homepagina"] {
         width: 30%;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3em ;
-    }
+        margin: 3em auto 0;
+    }    
+    
+    
 
     /* De onderstaande code is voor de fotocollage op de homepaige */
    
-    figure {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start; 
-        margin: 0.625em 0.625em;
+    .section.image-grid ul {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(9em, 1fr) );
+        max-width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
     }
 
-    figure img {
-        width: calc(50% - 0.625em); /* Zorg ervoor dat er 10px ruimte tussen de afbeeldingen is */
-        height: 44%;
-        border-radius: 0.75em;
-        margin: 0.3125em;
-    }
+    .section.image-grid li {
+        list-style: none;
+      }
 
-    figcaption{ /* alleen voor  de screenreader */
-        visibility: hidden;
-    }
+    .section.image-grid img {
+        max-width: 100%;
+      }
+        
 
     /* deze code is voor de blauwe section óver nijntje */
     main > section:nth-child(1) {
@@ -195,6 +226,13 @@ img{
         margin: var(--section-margin);
         line-height: var(--section-line-height);
     }
+
+    main > section:nth-child(1) h1 {
+        text-align: left;
+        margin-left: 1em;
+        margin-bottom: 0em;
+    }
+
 
 
     /* deze code is voor de het licht blauwe blok in óver nijntje */
@@ -208,7 +246,7 @@ img{
 
           /* deze code is voor de nijntje afbeedling */
         img[alt="Hoofdafbeelding nijntje"] {
-            max-height: 170px;
+            max-height: 9em;
             position: absolute;
             left: 30%;
             margin-top: -11.5em;
@@ -216,7 +254,7 @@ img{
 
 
     /* deze code is voor de losse grijze inhoudsopgave */
-    main > section:nth-child(2) {
+    .inhoudsopgave {
         background-color: var(--section-background-color);
         text-transform: lowercase;
         margin: 2em 1em ;
@@ -234,8 +272,20 @@ img{
         display: block;
         margin-block-start: 1em;
         margin-block-end: 1em;
+    }  /* */
+            
+
+              /* deze code is voor blockquote op de tweede pagina */
+    .blockquote{
+        font-size: 1.5em;
+        font-weight: bolder;
+        line-height: 1.3em;
+        text-align: center;
+        border-top: solid 0.188em #b1b1b1;
+        border-bottom: solid 0.188em #b1b1b1;
+        padding: 9px;
+        margin: 3.125em auto;
     }
-             /* */
 
     h2{
         color: #4c4747;
@@ -253,6 +303,6 @@ img{
         color: rgba(35,31,32,.4);
         position: absolute;
         font-weight: bolder;
-        right: 19px;
+        right: 1.188em;
         font-size: 70%;
     }

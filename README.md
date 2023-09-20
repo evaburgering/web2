@@ -110,8 +110,7 @@ Tijdens het navigeren op de website merkte ik op dat er een automatische audio u
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Deze week probeerde ik een gallerij te maken op de homepaige van fotos. Het is me dankzij de figure teg en het gebruiken van flex wrap gelukt om do fotos aan elkaar te koppen en on der elkaar te zetten . Het lukt me alleen nog niet om deze met z'n e naast elkaar te zetten.... Ik zal een student assistent vragen om mij hier mee te helpen.
+  Deze week probeerde ik een gallerij te maken op de homepaige van fotos. Het is me dankzij de figure tag en het gebruiken van flex wrap gelukt om do fotos aan elkaar te koppen en on der elkaar te zetten . Het lukt me alleen nog niet om deze met z'n e naast elkaar te zetten.... Ik zal een student assistent vragen om mij hier mee te helpen.
 <img src="readme-images/mijn_website_week2.0.jpg" width="375px" alt="2e pagina week 2">
 <img src="readme-images/mijn_website_week2.jpg" width="375px" alt="2e pagina week 2">
 
@@ -145,7 +144,12 @@ Tijdens het navigeren op de website merkte ik op dat er een automatische audio u
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Na de feedback van afgelopen week weet ik dat ik op de homepagina het met de figure tag toch helemaal verkeerd had aangepakt. Ik heb het nu veranderd in een ul en dit is veel makkelijk om mee te werken als je grid wilt gebruiken. Ik merk dat ik het nog een beetje lastig vind om in te schatten wanneer ik wel of geen classes mag gebruiken. Zo min mogelijk uiteraard maar toch. Het maken van een werkend grid blijk ik toch wel een stuk lastiger te vinden dan ik dacht.Vis de code die ik nu heb zou het moeten werken maar dat doet het niet.
+
+  <img src="readme-images/home collage.jpg" width="375px" alt="collage status">
+  <img src="readme-images/week2-code-collage.jpg" width="375px" alt="collage css">
+  <img src="readme-images/voortgang_week2_uitklapmenu.jpg" width="375px" alt="uitklapmenu">
+  <img src="readme-images/voortgang_week_2_overnijntje2.jpg" width="375px" alt="tweede pagina">
 
 
   ### Agenda voor meeting
