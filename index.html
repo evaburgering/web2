@@ -15,31 +15,35 @@
 <body>
 
 	<!--navigatie knop en vertikale slider -->
-	<header>
-		<nav role="navigatie">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="over-nijntje.html">Over nijntje</a></li>
-				<li><a href="/over-dick-bruna">Over Dick Bruna</a></li>
-				<li><a href="/producten">Over producten</a></li>
-				<li><a href="/boeken">Over boeken</a></li>
-				<li><a href="/nijntje-hoogtepunten">Nijntje hoogtepunten</a></li>
-				<li><a href="/zakelijke-informatie">Zakelijke informatie</a></li>
-			</ul>
-		</nav>
-		<button aria-label="Menu openen">Menu</button>
+	<header class="eersteheader hide">
+		<p>Nijntje</p>
 
-		<img src="images/main_nijntje.jpg" alt="nijntje homepagina">
-
+        <a href="index.html">
+            <img src="images/nijnlogo.jpg" alt="nijntjelogo" role="navigate to home"> <title>navigeer hier terug naar de home pagina</title>
+        </a>
 	</header>
+	<button aria-label="Menu openen">Menu</button>
+	<nav role="navigatie">
+		<ul>
+			<li><a href="over-nijntje.html">Over nijntje</a></li>
+			<li><a href="/over-dick-bruna">Over Dick Bruna</a></li>
+			<li><a href="/producten">Over producten</a></li>
+			<li><a href="/boeken">Over boeken</a></li>
+			<li><a href="/nijntje-hoogtepunten">Nijntje hoogtepunten</a></li>
+			<li><a href="/zakelijke-informatie">Zakelijke informatie</a></li>
+		</ul>
 
+		<ul>
+			<li><img src="images/engelse-flag.jpg"alt="Flag"> english </li>
+			<li><img src="images/duitse-flag.jpg" alt="Flag"> german </li>
+			<li><a href="/disclaimer-privacy-statement">disclaimer │ privacy statement</a></li>
+		</ul>
+	</nav>
 	
 	<main>                    <!-- Inhoud van de homepage hier... -->
 	
+		<img src="images/main_nijntje.jpg" alt="nijntje homepagina">
 		<h1>nijntje</h1>
-
-		
-
 
 		<section class="image-grid">
 			<h2 class="sr-only">Kijk eens rond op de nijntje site</h2>
@@ -159,7 +163,7 @@
 	<p>&copy; Mercis bv</p> 
 </footer>  <!-- Bron: nijntje.nl   -->
 
-    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/script_index.js"></script>
 </body>
 	
 </html>
