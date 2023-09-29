@@ -25,6 +25,20 @@
     --section-line-height: 1.7;
 }
 
+/* Donkere modus stijl gaat automatisch wanneer mensen een dark theme op hun computer aan hebben gezet */
+@media (prefers-color-scheme:dark) {
+    :root {
+        --main-text-color: #ffffff;  
+        --main-background-color: #2b2048;
+        --button-background-color: #f0efef;
+        --button-text-color: #2b2048;
+        --link-color: #ffffff;
+        --link-hover-color: #ffffff;
+        --section-background-color: #005398;
+        --section-text-color: #321e67; 
+    }
+}
+
 
 
 
@@ -39,8 +53,13 @@ body{
     min-height: 100%;
 	font-size: 1.125em;
     font-family: arial,helvetica
-	
 }
+
+body.dark-mode {
+    background-color: #2b2048;
+    color: #eee;
+}
+
 
 
 .sr-only { /* bron: https://css-tricks.com/inclusively-hidden/e */
@@ -60,9 +79,17 @@ p{ font-size: 1em;
    margin-right: 1.5em;
 }
 
+.dark-mode p{
+    color:#f0efef;
+}
+
 a{
     text-decoration: none;
     color: #f26522;
+}
+
+.dark-mode a{
+    color: #ffffff;
 }
 
 main p{
@@ -101,6 +128,9 @@ button:focus{
     outline-offset: 0.2em;   /* Zorg voor wat afstand tussen de rand en de knop */
 }
 
+button:hover {
+    rotate:10deg;
+  }
 
 button[disabled]{ 
 	cursor: default ;
@@ -128,6 +158,12 @@ nav {
     text-transform: lowercase;
 }
 
+/* Donkere modus stijl */
+.dark-mode nav {
+    background: #2b2048;
+    color: #fff;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -138,6 +174,7 @@ nav ul li {
     text-align:start;
     padding-left: 2em;
     font-weight: bolder;
+    line-height: 0.5em;
 }
 
 nav a {
@@ -149,6 +186,7 @@ nav.active {
     right: 0;
 }
 
+
 header {
     transition: all .25s ease;
 }
@@ -158,9 +196,19 @@ header.active {
     color: white;
 }
 
+/* dark mode*/  
+.dark-mode header.active {
+    background: #2b2048;
+}
+
 img[alt="flag"] {     /* de opmaak van de vlaggetjes in de nav*/  
-    width: 28px;
+    width: 1.75em;
     border-radius: 2px;
+}
+
+
+img[alt="Flag"] {
+    width: 1.75em;
 }
 
 .eersteheader, .tweedeheader {
@@ -175,6 +223,12 @@ img[alt="flag"] {     /* de opmaak van de vlaggetjes in de nav*/
     z-index: 9999;
 }
 
+/* Donkere modus stijl */
+.dark-mode .eersteheader, .dark-mode .tweedeheader {
+    background: #2b2048;
+    color: #eee;
+}
+
 .eersteheader.hide { /*word getoggelt (omhoog gegooid) in javascript*/  
     transform: translate3d(0,-100%,0);
 }
@@ -186,9 +240,12 @@ img[alt="flag"] {     /* de opmaak van de vlaggetjes in de nav*/
     padding-top: 0.250em;
 }
 
-img[alt="Flag"] {
-    width: 1.75em;
+/* Donkere modus stijl */
+.dark-mode .eersteheader p, .dark-mode .tweedeheader p { 
+    color: #ffffff;
 }
+
+
 
 /* logo nijntje */  
 img[alt="nijntjelogo"] {
@@ -197,10 +254,21 @@ img[alt="nijntjelogo"] {
     border-radius: 100%;
     left: 1em;
     top: 1em;  
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Begin bij 0 graden rotatie */
+    }
+    to {
+        transform: rotate(360deg); /* Eindig bij 360 graden rotatie */
+    }
 }
 
 img{ 
-    max-width: 90%
+    max-width: 90%;
+    border-radius: 05%;
 }
 
 h1{
@@ -241,6 +309,16 @@ img[alt="nijntje homepagina"] {
 .image-grid img {
     max-width: 100%;
 }
+
+.image-grid img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
     
 /* deze code is voor de blauwe section óver nijntje */
 main > section:nth-child(1) {
@@ -267,6 +345,14 @@ main > section > p:nth-of-type(2) {
     margin: 1em 4em 1em 1.7em;
 }
 
+/* Donkere modus stijl */
+.dark-mode main > section > p:nth-of-type(2) {
+    background:#2b2048; /* Pas de donkere modus achtergrondkleur aan */
+    /* Voeg andere donkere modus stijlen toe indien nodig */
+}
+
+
+
         /* deze code is voor de nijntje afbeedling */
 img[alt="Hoofdafbeelding nijntje"] {
     max-height: 9em;
@@ -274,6 +360,12 @@ img[alt="Hoofdafbeelding nijntje"] {
     left: 30%;
     margin-top: -11.5em;
 }
+
+img[alt="Hoofdafbeelding nijntje"]:hover {
+    rotate:20deg;
+    animation: rotate 10s infinite;
+}
+
 
 
 /* deze code is voor de losse grijze inhoudsopgave */
@@ -286,6 +378,10 @@ img[alt="Hoofdafbeelding nijntje"] {
     border-radius: 0.375em;
 }
 
+.dark-mode .inhoudsopgave{
+    background-color: #005398;
+}
+
 ol{
     color: #f26522;
     font-weight: 700;
@@ -296,7 +392,11 @@ ol{
     margin-block-start: 1em;
     margin-block-end: 1em;
 }  /* */
-        
+
+.dark-mode ol{
+    color: #ffffff;
+}
+      
 
             /* deze code is voor blockquote op de tweede pagina */
 .blockquote{
@@ -315,6 +415,10 @@ h2{
     padding-left: 1.5em;
     }
 
+.dark-mode h2{
+    color: #ffffff;
+}
+
 h3{
     margin-left: 1.25em;
     font-size: 1.125em;
@@ -328,4 +432,16 @@ footer{
     font-weight: bolder;
     right: 1.188em;
     font-size: 70%;
+}
+
+
+
+/* darkmode checkbox code*/
+#dark-mode-toggle {
+    width: 2em;
+    height: 2em;
+    background-color: #333;
+    border: 0.22em solid #000;
+    cursor: pointer;
+    border-radius: 100%;
 }

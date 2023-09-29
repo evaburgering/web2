@@ -20,23 +20,25 @@
         <p>Nijntje</p>
 
         <a href="index.html">
-            <img src="images/nijnlogo.jpg" alt="nijntjelogo" role="navigate to home"> <title>navigeer hier terug naar de home pagina</title>
+            <img src="images/nijnlogo.jpg" alt="nijntjelogo" aria-label="navigeer hier terug naar de home pagina">
         </a>
 	</header>
     <button aria-label="Menu openen">Menu</button>
-    <nav role="navigatie">
-        <ul>
-            <li><a href="over-nijntje.html">Over nijntje</a></li>
-            <li><a href="/over-dick-bruna">Over Dick Bruna</a></li>
-            <li><a href="/producten">Over producten</a></li>
-            <li><a href="/boeken">Over boeken</a></li>
-            <li><a href="/nijntje-hoogtepunten">Nijntje hoogtepunten</a></li>
-            <li><a href="/zakelijke-informatie">Zakelijke informatie</a></li>
-        </ul>
+    <nav role="navigation" aria-label="pagina-overzicht">
+            <ul>
+                <li><a href="over-nijntje.html">Over nijntje</a></li>
+                <li><a href="https://www.nijntje.nl/over-dick-bruna">Over Dick Bruna</a></li>
+                <li><a href="https://www.nijntje.nl/producten/">Over producten</a></li>
+                <li><a href="https://www.nijntje.nl/boeken/">Over boeken</a></li>
+                <li><a href="https://www.nijntje.nl/nijntje-hoogtepunten">Nijntje hoogtepunten</a></li>
+                <li><a href="https://www.nijntje.nl/zakelijke-informatie">Zakelijke informatie</a></li>
+            </ul>
 
         <ul>
-            <li><img src="images/engelse-flag.jpg"alt="Flag"> english </li>
+            <li><img src="images/engelse-flag.jpg" alt="Flag"> english </li>
             <li><img src="images/duitse-flag.jpg" alt="Flag"> german </li>
+            <li> <input type="checkbox" id="dark-mode-toggle">
+                 <label for="dark-mode-toggle">Dark Mode</label></li>
             <li><a href="/disclaimer-privacy-statement">disclaimer │ privacy statement</a></li>
         </ul>
     </nav>
@@ -73,7 +75,7 @@
         </section>
 
         <section class="blockquote">
-            <h3 class="sr-only">Een quote van we website</h3>
+            <h3 class="sr-only">Een quote van de website</h3>
             <p>"Volgens de Japanse en Chinese dierenriem is Dick Bruna geboren in het jaar van het konijn."</p>
         </section>
 
