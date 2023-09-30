@@ -142,7 +142,7 @@ button[disabled]{
 
 
     /* onderstaande code is voor de uitschuif menubalk 
-BRON: chatgpt en w33 schools, transitions snelheid enz, van de nijntje website   WERKT NOG NIETT goed*/
+BRON: chatgpt, transitions snelheid enz, van de nijntje website */
 nav {
     position: fixed;
     top: 0;
