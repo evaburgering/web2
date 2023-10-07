@@ -54,11 +54,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>ik heb het kleurcontrast van de website getest, deze is van zichtzalf al erg goed.
- <img src="readme-images/kleurentest_navknop" width="375px" alt="contrast test">
- <img src="readme-images/kleurentest_navknop_voorbeeld" width="375px" alt="contrast test">
+ <img src="readme-images/kleurentest_navknop.jpg" width="375px" alt="contrast test">
+ <img src="readme-images/kleurentest_navknop_voorbeeld.jpg" width="375px" alt="contrast test">
 
-  <img src="readme-images/kleurentest_2epagina" width="375px" alt="contrast test">
-   <img src="readme-images/basis_kleurentest_2epagina" width="375px" alt="contrast test">
+  <img src="readme-images/kleurentest_2epagina.jpg" width="375px" alt="contrast test">
+   <img src="readme-images/basis_kleurentest_2epagina.jpg" width="375px" alt="contrast test">
 
    
   
@@ -90,10 +90,10 @@ Tijdens het navigeren op de website merkte ik op dat er een automatische audio u
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/overzicht_schetsen" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/overzicht_schetsen.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/overzicht_schet_menu" width="375px" alt="breakdown van een menu">
+  <img src="readme-images/overzicht_schet_menu.jpg" width="375px" alt="breakdown van een menu">
 </details>
 
 

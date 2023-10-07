@@ -26,19 +26,63 @@
 }
 
 /* Donkere modus stijl gaat automatisch wanneer mensen een dark theme op hun computer aan hebben gezet */
-@media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --main-text-color: #ffffff;  
-        --main-background-color: #2b2048;
-        --button-background-color: #f0efef;
-        --button-text-color: #2b2048;
+        --background-color: #2b2048;
+        --text-color: #eee;
         --link-color: #ffffff;
-        --link-hover-color: #ffffff;
-        --section-background-color: #005398;
-        --section-text-color: #321e67; 
-    }
+        --nav-background: #2b2048;
+        --header-background: #2b2048;
+        --header-text-color: #eee;
+        --section-background: #2b2048;
+        --inhoudsopgave-background: #005398;
+        --ol-color: #ffffff;
+        --h2-color: #ffffff;
+    }}
+
+/* Dark mode elementen*/
+
+body.dark-mode {
+    background-color: #2b2048;
+    color: #eee;
 }
 
+.dark-mode p{
+    color:#f0efef;
+}
+
+.dark-mode a{
+    color: #ffffff;
+}
+.dark-mode nav {
+    background: #2b2048;
+    color: #fff;
+}
+.dark-mode header.active {
+    background: #2b2048;
+}
+.dark-mode .eersteheader, .dark-mode .tweedeheader {
+    background: #2b2048;
+    color: #eee;
+}
+.dark-mode .eersteheader p, .dark-mode .tweedeheader p { 
+    color: #ffffff;
+}
+
+.dark-mode main > section > p:nth-of-type(2) {
+    background:#2b2048; /* Pas de donkere modus achtergrondkleur aan */
+    /* Voeg andere donkere modus stijlen toe indien nodig */
+}
+.dark-mode .inhoudsopgave{
+    background-color: #005398;
+}
+.dark-mode ol{
+    color: #ffffff;
+}
+      
+.dark-mode h2{
+    color: #ffffff;
+}
 
 
 
@@ -79,18 +123,11 @@ p{ font-size: 1em;
    margin-right: 1.5em;
 }
 
-.dark-mode p{
-    color:#f0efef;
-}
-
 a{
     text-decoration: none;
     color: #f26522;
 }
 
-.dark-mode a{
-    color: #ffffff;
-}
 
 main p{
     display: block;  
@@ -120,7 +157,7 @@ text-transform: lowercase;
 outline: 0;
 border: 0.125em solid #f0efef;
 padding: 0.100em 0.500em 0;
-transition: all .35s cubic-bezier(.06,.4,.5,.95);
+transition: all .35s cubic-bezier(.06,.4,.5,.95);   /*  Dit definieert de timingfunctie die wordt gebruikt voor de overgang.*/
 }
 
 button:focus{
@@ -129,7 +166,7 @@ button:focus{
 }
 
 button:hover {
-    rotate:10deg;
+    transform: rotate(10deg);
   }
 
 button[disabled]{ 
@@ -156,12 +193,6 @@ nav {
     padding-bottom: 2.5em;
     padding-top: 4em;
     text-transform: lowercase;
-}
-
-/* Donkere modus stijl */
-.dark-mode nav {
-    background: #2b2048;
-    color: #fff;
 }
 
 nav ul {
@@ -196,10 +227,6 @@ header.active {
     color: white;
 }
 
-/* dark mode*/  
-.dark-mode header.active {
-    background: #2b2048;
-}
 
 img[alt="flag"] {     /* de opmaak van de vlaggetjes in de nav*/  
     width: 1.75em;
@@ -223,12 +250,6 @@ img[alt="Flag"] {
     z-index: 9999;
 }
 
-/* Donkere modus stijl */
-.dark-mode .eersteheader, .dark-mode .tweedeheader {
-    background: #2b2048;
-    color: #eee;
-}
-
 .eersteheader.hide { /*word getoggelt (omhoog gegooid) in javascript*/  
     transform: translate3d(0,-100%,0);
 }
@@ -239,12 +260,6 @@ img[alt="Flag"] {
     font-weight: bolder;
     padding-top: 0.250em;
 }
-
-/* Donkere modus stijl */
-.dark-mode .eersteheader p, .dark-mode .tweedeheader p { 
-    color: #ffffff;
-}
-
 
 
 /* logo nijntje */  
@@ -345,13 +360,6 @@ main > section > p:nth-of-type(2) {
     margin: 1em 4em 1em 1.7em;
 }
 
-/* Donkere modus stijl */
-.dark-mode main > section > p:nth-of-type(2) {
-    background:#2b2048; /* Pas de donkere modus achtergrondkleur aan */
-    /* Voeg andere donkere modus stijlen toe indien nodig */
-}
-
-
 
         /* deze code is voor de nijntje afbeedling */
 img[alt="Hoofdafbeelding nijntje"] {
@@ -362,7 +370,7 @@ img[alt="Hoofdafbeelding nijntje"] {
 }
 
 img[alt="Hoofdafbeelding nijntje"]:hover {
-    rotate:20deg;
+    transform: rotate(20deg);
     animation: rotate 10s infinite;
 }
 
@@ -378,10 +386,6 @@ img[alt="Hoofdafbeelding nijntje"]:hover {
     border-radius: 0.375em;
 }
 
-.dark-mode .inhoudsopgave{
-    background-color: #005398;
-}
-
 ol{
     color: #f26522;
     font-weight: 700;
@@ -392,11 +396,7 @@ ol{
     margin-block-start: 1em;
     margin-block-end: 1em;
 }  /* */
-
-.dark-mode ol{
-    color: #ffffff;
-}
-      
+   
 
             /* deze code is voor blockquote op de tweede pagina */
 .blockquote{
@@ -415,9 +415,6 @@ h2{
     padding-left: 1.5em;
     }
 
-.dark-mode h2{
-    color: #ffffff;
-}
 
 h3{
     margin-left: 1.25em;
