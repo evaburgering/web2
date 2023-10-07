@@ -53,7 +53,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>ik heb het kleurcontrast van de website getest, deze is van zichtzalf al erg goed.
+  <summary>ik heb het kleurcontrast van de website getest, deze is van zichtzalf al erg goed de website is visueel al goed toegankleijk ivm het gebruik van voornamelijk primaire kleuren zoals ook in de nijntje boeken word gedaan.
+
+  
  <img src="readme-images/kleurentest_navknop.jpg" width="375px" alt="contrast test">
  <img src="readme-images/kleurentest_navknop_voorbeeld.jpg" width="375px" alt="contrast test">
 
@@ -108,7 +110,7 @@ Tijdens het navigeren op de website merkte ik op dat er een automatische audio u
   ### Stand van zaken
   Deze week probeerde ik een gallerij te maken op de homepaige van fotos. Het is me dankzij de figure tag en het gebruiken van flex wrap gelukt om do fotos aan elkaar te koppen en on der elkaar te zetten . Het lukt me alleen nog niet om deze met z'n e naast elkaar te zetten.... Ik zal een student assistent vragen om mij hier mee te helpen.
 <img src="readme-images/mijn_website_week2.0.jpg" width="375px" alt="2e pagina week 2">
-<img src="readme-images/mijn_website_week2.jpg" width="375px" alt="2e pagina week 2">
+<img src="readme-images/mijn-website-week 2jpg" width="375px" alt="2e pagina week 2">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -167,6 +169,7 @@ Ik heb voor de surface plane een dark mode gemaakt en daar vandaag het contrast 
   - Ik had een aantal errors in mijn code die zeker niet nodig waren. Heb deze allemaal weg gewerkt
   - Het contrast van mijn darkmode is prima
   - mijn title text voor de afbeeldingen moest ik ook naar de alt verplaatsen omdat ik er achter kwam dat die werd  voorgelezen met de screanreader ipv de title.
+  - het voorlezen met de screenreader verlipe met het menu niet lekker, het werd nog ingeklapt voorgelezen. Dit moet ik dus nog veranderen
 
 </details>
 
@@ -180,9 +183,10 @@ Ik heb voor de surface plane een dark mode gemaakt en daar vandaag het contrast 
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 Tijdens deze feedback kon ik niet aanwezig zijn ivm blaasontsteking. Ik heb mijn zwgaer gevraagd of hij naar mijn code wilde kijken of hij nog dingen zag die niet helemaal klopte. Hij vertelde mij dat ik opnieuw naar al mijn code moet kijken om alles netjes in te laten springen omdat het er erg rommelig uit zag. Dus dat ben ik gaan doen. Ook heeft hij mij geholpen met de laatste stappen van de darkmode te zetten wat mij niet helemaal lukte nog.
+
+<img src="readme-images/inspringen-feedback.png" width="375px" alt="inspring correctie">
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
