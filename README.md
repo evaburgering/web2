@@ -125,7 +125,7 @@ Tijdens het navigeren op de website merkte ik op dat er een automatische audio u
   ### Stand van zaken
   Deze week probeerde ik een gallerij te maken op de homepaige van fotos. Het is me dankzij de figure tag en het gebruiken van flex wrap gelukt om do fotos aan elkaar te koppen en on der elkaar te zetten . Het lukt me alleen nog niet om deze met z'n e naast elkaar te zetten.... Ik zal een student assistent vragen om mij hier mee te helpen.
 <img src="readme-images/mijn_website_week2.0.jpg" width="375px" alt="2e pagina week 2">
-<img src="readme-images/mijn-website-week 2jpg" width="375px" alt="2e pagina week 2">
+<img src="readme-images/mijn-website-week 2.png" width="375px" alt="2e pagina week 2">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
