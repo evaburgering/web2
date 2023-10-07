@@ -54,6 +54,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>ik heb het kleurcontrast van de website getest, deze is van zichtzalf al erg goed de website is visueel al goed toegankleijk ivm het gebruik van voornamelijk primaire kleuren zoals ook in de nijntje boeken word gedaan.
+  Lijst met je bevindingen die in de test naar voren kwamen:
+  Ik heb het kleurcontrast van de tekst en de achtergrond getest, deze was al goed en hoeft dus niet veel aan te veranderd te worden. 
+  Ik heb met de Colorblindly extention de website doorgelopen met alle opties , deze zijn: Trichromacy / Normal
+Blue Cone Monochromacy / Achromatomaly
+Monochromacy / Achromatopsia
+Green-Weak / Deuteranomaly
+Green-Blind / Deuteranopia
+Red-Weak / Protanomaly
+Red-Blind / Protanopia
+Blue-Weak / Tritanomaly
+Blue-Blind / Tritanopia.
+Hieruit bleek dat doordat we website met felle primaire kleuren werkt in de illustraties maar het tektueel heel basic houd het met elk kleurbeperking nogsteeds een nette prikkelende website is. 
+
+Tijdens het navigeren op de website merkte ik op dat er een automatische audio uitleg word gegeven als je over een iten hovert. Ik vind dit persoonlijk erg vervelend n zal dit zelf niet in mijn website doorzetten.
+
 
   
  <img src="readme-images/kleurentest_navknop.jpg" width="375px" alt="contrast test">
